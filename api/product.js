@@ -1,8 +1,8 @@
-const express = require('express')
-const router = express.Router()
+const express = require("express");
+const router = express.Router();
 
-router.get('/', async(req, res, next) => {
-    res.send("This is a product page!");
-})
+router.get("/", async (req, res, next) => {
+  res.render("index");
+});
 
-module.exports = router
+module.exports = router;
